@@ -2,7 +2,7 @@ import java.io.File;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Passports {
+public class Day4 {
     static String[] keywords = new String[] { "byr", "iyr", "eyr", "hgt", "hcl", "ecl", "pid" };
     public static void main(String[] args) {
         int count = 0;
@@ -70,7 +70,6 @@ public class Passports {
                         return false;
                     break;
                 case "pid":
-                    System.out.println(keyword[1].length());
                     if (keyword[1].length() !=  9) 
                         return false;
                     if (!isNumeric(keyword[1]))

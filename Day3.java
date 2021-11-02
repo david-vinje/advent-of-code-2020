@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class TobogganTrajectory {
+public class Day3 {
     public static void main(String[] args) {
         // System.out.println(trajectory(1,2));
         long a = trajectory(1, 1);

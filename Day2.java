@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PasswordPhilosophy {
+public class Day2 {
     public static void main(String[] args) {
         newPolicy();
     }

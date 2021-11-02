@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ReportRepair {
+public class Day1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         ArrayList<Integer> nums = new ArrayList<>();
