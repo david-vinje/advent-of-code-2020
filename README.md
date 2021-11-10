@@ -1,2 +1,2 @@
 # advent-of-code-2020
-My solutions to the Advent of Code calendar 2020
+Solutions to some of the problems from the 2020 Advent of Code calendar 
