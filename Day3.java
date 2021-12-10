@@ -4,22 +4,17 @@ import java.util.Scanner;
 
 public class Day3 {
     public static void main(String[] args) {
-        // System.out.println(trajectory(1,2));
         long a = trajectory(1, 1);
-        System.out.println(a);
-
         long b = trajectory(3, 1);
-        System.out.println(b);
-
         long c = trajectory(5, 1);
-        System.out.println(c);
-
         long d = trajectory(7, 1);
-        System.out.println(d);
-
         long e = trajectory(1, 2);
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
         System.out.println(e);
-
+        // RESULT
         System.out.println(a*b*c*d*e);
     }
 

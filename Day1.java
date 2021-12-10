@@ -1,9 +1,13 @@
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Day1 {
-    public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+    public static void main(String[] args) throws FileNotFoundException {
+        File file = new File("day1.txt");
+        Scanner scan = null;
+        scan = new Scanner(file);
         ArrayList<Integer> nums = new ArrayList<>();
         while (scan.hasNextInt()) {
             nums.add(scan.nextInt());
@@ -14,7 +18,7 @@ public class Day1 {
 
     static int findTwoExpenses(ArrayList<Integer> nums, int target) {
         for (int i = 0; i < nums.size(); i++)
-            for (int j = i + 1; j < nums.size(); j++)
+            for (int j = i + 1; j < nums.size()-1; j++)
                 if (nums.get(i) + nums.get(j) == target)
                     return nums.get(i) * nums.get(j);
         return 0;

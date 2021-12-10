@@ -1,12 +1,16 @@
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Day2 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws FileNotFoundException {
+        oldPolicy();
         newPolicy();
     }
 
-    static void newPolicy() {
-        Scanner scan = new Scanner(System.in);
+    static void newPolicy() throws FileNotFoundException {
+        File file = new File("day2.txt");
+        Scanner scan = new Scanner(file);
         String line = null;
         int a = 0, b = 0;
         char letter = 0;
@@ -21,11 +25,13 @@ public class Day2 {
             if (password[a-1] == letter ^ password[b-1] == letter)
                 count++;
         }
+        scan.close();
         System.out.println(count);
     }
 
-    static void oldPolicy() {
-        Scanner scan = new Scanner(System.in);
+    static void oldPolicy() throws FileNotFoundException {        
+        File file = new File("day2.txt");
+        Scanner scan = new Scanner(file);
         String line = null;
         int lower = 0, upper = 0;
         char[] password = null;
