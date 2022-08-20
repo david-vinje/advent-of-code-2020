@@ -2,15 +2,18 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Set;
 
-public class Day7 {
+public class Day7 implements Iterable {
     public static void main(String[] args) {
         File file = new File("day7.txt");
         part1(file);
     }
+
+    static int m(ArrayList list) {return 1;}
 
     public static void part1(File file) {
         Scanner scn = null;
@@ -53,5 +56,13 @@ public class Day7 {
             }
         }
         return addtionalContainers;
+    }
+
+
+
+    @Override
+    public Iterator iterator() {
+        // TODO Auto-generated method stub
+        return null;
     }
 }
